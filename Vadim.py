@@ -1,11 +1,11 @@
 from selenium import webdriver
 import time
-link = "http://10.0.1.17"
+link = "http://"
 browser = webdriver.Chrome(executable_path='/home/user/Документы/Chromedriver/chromedriver')
 browser.get(link)
 time.sleep(2)
-browser.find_element_by_name("login").send_keys("375292361864")
-browser.find_element_by_name("password").send_keys("123456")
+browser.find_element_by_name("login").send_keys()
+browser.find_element_by_name("password").send_keys()
 browser.find_element_by_xpath("//button[contains(text(),'Войти')]").click()
 time.sleep(1)
 browser.find_element_by_xpath("//i[@class='fal fa-comments']").click()
